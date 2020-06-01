@@ -1836,7 +1836,7 @@ function addEventListeners(target, types, handler) {
   each(splitStr(types), function (type) {
     target.addEventListener(type, handler, {
       capture: false,
-      passive: false
+      passive: true
     });
   });
 }
