@@ -11,7 +11,7 @@ export default function addEventListeners(target, types, handler) {
   each(splitStr(types), (type) => {
     target.addEventListener(type, handler, {
       capture: false,
-      passive: false
+      passive: true
     });
   });
 }
